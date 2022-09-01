@@ -1,0 +1,81 @@
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+.header {
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    padding: .5em;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.elevators-body {
+    display: flex;
+    gap:1rem;
+}
+
+.elevators {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    gap:1rem;
+}
+
+.floors {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.elevators .lift {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 1.5em;
+    width: 10em;
+    background: rgb(77, 77, 158);
+   
+}
+
+.elevators .lift-box {
+    position: absolute;
+    background: gray;
+    height: 3em;
+    width: 2.4em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0em;
+    transition: 1s;
+}
+
+button {
+    height: 3em;
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    background: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button:hover {
+    background: rgb(198, 196, 196);
+    color: white;
+}
