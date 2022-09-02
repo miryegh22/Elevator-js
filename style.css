@@ -1,0 +1,42 @@
+.apartment {
+  width: 100%;
+  max-width: 700px;
+  margin: 50px auto;
+  position: relative;
+}
+.floor {
+  padding: 25px 15px;
+  height: 80px;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+}
+
+.floor > div {
+  pointer-events: none;
+}
+
+.elevators {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.elevator-block .shaft {
+  height: 100%;
+  width: 4px;
+  background-color: blue;
+}
+.elevator-block .elevator {
+  height: 80px;
+  width: 40px;
+  padding: 10px 0px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  transition: 2s;
+  margin-top: -80px;
+}
