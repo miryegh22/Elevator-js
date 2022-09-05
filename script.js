@@ -1,17 +1,17 @@
 const floordiv = document.querySelector(".floors");
-for (let n = 20; n >= 0; n--) {
+for (let n = 19; n >= 0; n--) {
   const floor = document.createElement("div");
   floor.setAttribute("class", "floor");
   floor.setAttribute("data-floor",n);
   floordiv.appendChild(floor);
-  floor.innerText = n;
+  floor.innerText = n+1;
 }
 const lift1 = document.querySelector("#elevator1");
 const lift2 = document.querySelector("#elevator2");
 const lift3 = document.querySelector("#elevator3");
-const random = Math.floor(Math.random() * 20) + 1;
-const random1 = Math.floor(Math.random() * 20) + 1;
-const random2 = Math.floor(Math.random() * 20) + 1;
+const random = Math.floor(Math.random() * 19) + 1;
+const random1 = Math.floor(Math.random() * 19) + 1;
+const random2 = Math.floor(Math.random() * 19) + 1;
 lift1.style.marginTop = 80 * -1 * random - 80 + "px";
 lift2.style.marginTop = 80 * -1 * random1 - 80 + "px";
 lift3.style.marginTop = 80 * -1 * random2 - 80 + "px";
@@ -51,3 +51,4 @@ let floorHeight = 80;
     };
   }
 })();
+
